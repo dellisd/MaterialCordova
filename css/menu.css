@@ -1,0 +1,41 @@
+﻿menu{
+    width:calc(100% - 56px);
+    left:-100%;
+    top:0;
+    margin:0;
+    position:fixed;
+    background:#FAFAFA;
+    height:100%;
+    padding:0;
+    transition:left 0.5s;
+    max-width:280px;
+    box-sizing:border-box;
+    z-index:501;
+}
+menu.open{
+    left:0;
+}
+menu-header{
+    height:180px;
+    width:100%;
+    display:block;
+    background:#2196F3 url(images/wallpaper.png) no-repeat center center;
+    background-size:cover;
+}
+scrim{
+    width:100%;
+    visibility:hidden;
+    height:100%;
+    background:#000000;
+    opacity:0;
+    transition:opacity 0.5s, visibility 0.5s;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:500;
+}
+scrim.open{
+    width:100%;
+    opacity:0.5;
+    visibility:visible;
+}

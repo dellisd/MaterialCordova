@@ -1,0 +1,18 @@
+﻿/*Search Bar*/
+input[type="search"]{
+    width:calc(100% - 144px);
+    height:100%;
+    border:0px;
+    background:rgba(0,0,0,0);
+    color:#212121;
+    font-size:20px;
+    font-family:Roboto, sans-serif;
+    margin:0;
+    padding:0 0 0 24px;
+    opacity:1;
+    transition:opacity 0.5s, top 0.5s;
+    top:56px;
+}
+::-webkit-search-cancel-button{
+    display:none;
+}
