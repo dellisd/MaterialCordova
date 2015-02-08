@@ -19,8 +19,38 @@ menu-header{
     height:180px;
     width:100%;
     display:block;
-    background:#2196F3 url(images/wallpaper.png) no-repeat center center;
+    background:#2196F3 url() no-repeat center center;
     background-size:cover;
+}
+ml{
+    width:100%;
+    color:#212121;
+}
+.single mi{
+    height:48px;
+    padding:0 16px;
+    line-height:48px;
+    width:100%;
+    box-sizing:border-box;
+    display:block;
+}
+mi t{
+    position:absolute;
+    left:72px;
+}
+mi svg{
+    position:relative;
+    top:6px;
+}
+mi path{
+    fill:rgba(0,0,0,0.87)
+}
+mh{
+    padding-left:16px;
+    display:block;
+    height:48px;
+    color:rgba(0,0,0,0.54);
+    line-height:48px;
 }
 scrim{
     width:100%;
