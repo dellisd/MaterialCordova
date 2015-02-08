@@ -29,4 +29,7 @@
         position:absolute;
         top:396px;
     }
+        menu{
+            max-width:240px;
+        }
 }

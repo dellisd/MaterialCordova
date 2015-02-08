@@ -15,6 +15,7 @@
 }
 menu.open{
     left:0;
+    transition-duration:0s;
 }
 menu-header{
     height:180px;
@@ -59,7 +60,7 @@ scrim{
     width:100%;
     visibility:hidden;
     height:100%;
-    background:#000000;
+    background:rgba(0,0,0,0.5);
     opacity:0;
     transition:opacity 0.5s, visibility 0.5s;
     position:fixed;
@@ -69,6 +70,6 @@ scrim{
 }
 scrim.open{
     width:100%;
-    opacity:0.5;
+    opacity:1;
     visibility:visible;
 }

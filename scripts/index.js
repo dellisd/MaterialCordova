@@ -24,10 +24,32 @@
     };
 })();
 $('#menu').click(function () {
+    var w = $('menu').width()
+    md = false
     $('menu, scrim').addClass('open')
+    $('menu').draggable({ 
+        axis: "x",
+        containment: [-600, 0, 0, 0],
+        stop: function (e, ui) {
+            if ((300 - (ui.offset.left * -1)) > (w / 2)) {
+                $(this).animate({ left: 0 }, 500)
+            }
+            else {
+                $('menu').draggable("destroy")
+                md = true
+                $(this).animate({ left: (w * -1) }, 500)
+                $(this).attr('style', '')
+                $('scrim').click()
+            }
+        }
+        });
 })
 $('scrim').click(function () {
     $('menu, scrim').removeClass('open');
+    if (!md) {
+        $('menu').draggable("destroy")
+    }
+    
 });
 $('#search').click(function () {
     $('#first').toggleClass('search');

@@ -137,7 +137,9 @@
     </Content>
     <Content Include="index.html" />
     <Content Include="scripts\index.js" />
+    <Content Include="scripts\jquery-ui.min.js" />
     <Content Include="scripts\jquery.js" />
+    <Content Include="scripts\jquery.ui.touch-punch.min.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
