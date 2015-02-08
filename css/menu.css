@@ -15,6 +15,9 @@
 }
 menu.open{
     left:0;
+    
+}
+.nt{
     transition-duration:0s;
 }
 menu-header{

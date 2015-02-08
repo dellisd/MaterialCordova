@@ -24,6 +24,8 @@
     };
 })();
 $('#menu').click(function () {
+    $('menu').attr('style', '')
+    setTimeout(function(){$('menu').addClass('nt')}, 500)
     var w = $('menu').width()
     md = false
     $('menu, scrim').addClass('open')
@@ -38,7 +40,6 @@ $('#menu').click(function () {
                 $('menu').draggable("destroy")
                 md = true
                 $(this).animate({ left: (w * -1) }, 500)
-                $(this).attr('style', '')
                 $('scrim').click()
             }
         }
@@ -46,6 +47,7 @@ $('#menu').click(function () {
 })
 $('scrim').click(function () {
     $('menu, scrim').removeClass('open');
+    $('menu').removeClass('nt')
     if (!md) {
         $('menu').draggable("destroy")
     }
