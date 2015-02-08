@@ -1,0 +1,32 @@
+﻿@media (max-device-width: 767px) and (orientation: landscape){
+    header, section, input[type="search"] {
+        height:48px;
+        line-height:48px;
+    }
+    main{
+        position:relative;
+        top:48px;
+    }
+    .dh{
+    height:96px;
+    }
+    .dh app-bar-title{
+        top:48px;
+
+    }
+    touch-target {
+        margin-top: 0px;
+    }
+    .spc{
+        height:48px;
+        width:100%;
+    }
+        #stp iframe, #map{
+        position:relative;
+        top:96px;
+    }
+        .routes{
+        position:absolute;
+        top:396px;
+    }
+}
