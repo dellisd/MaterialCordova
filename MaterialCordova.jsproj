@@ -110,8 +110,10 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="css\desktop.css" />
     <Content Include="css\header.css" />
     <Content Include="css\inputs.css" />
+    <Content Include="css\landscape.css" />
     <Content Include="css\menu.css" />
     <Content Include="images\wallpaper.png" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />

@@ -1,2 +1,32 @@
-﻿body {
+﻿@media only screen and (min-device-width: 768px){
+    header, section, input[type="search"] {
+        height:64px;
+        line-height:64px;
+    }
+    main{
+        position:relative;
+        top:64px;
+    }
+    touch-target {
+        margin-top: 8px;
+    }
+    .dh{
+        height:128px;
+    }
+    .dh app-bar-title{
+        top:64px;
+
+    }
+    .spc{
+        height:64px;
+        width:100%;
+    }
+        #stp iframe, #map{
+        position:relative;
+        top:128px;
+    }
+        .routes{
+        position:absolute;
+        top:428px;
+    }
 }
