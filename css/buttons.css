@@ -1,0 +1,58 @@
+﻿floating-action{
+    width:56px;
+    height:56px;
+    border-radius:56px;
+    position:absolute;
+    background:#FF3D00;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size:24px;
+    text-align:center;
+}
+floating-action.mini{
+    width:40px;
+    height:40px;
+    border-radius:40px;
+}
+floating-action path{
+    fill:#fff;
+}
+floating-action svg{
+    position:relative;
+    top:16px;
+}
+.fixed{
+    position:fixed;
+}
+button{
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    min-width:64px;
+    height:36px;
+    margin:6px 4px;
+    padding:0 8px;
+    line-height:36px;
+    text-align:center;
+    text-transform:uppercase;
+    color:#2196F3;
+    font-size:14px;
+    font-weight:500;
+    background:#fff;
+    border:0px;
+    transition:box-shadow 0.2s;
+    border-radius:2px;
+}
+button:not(.floating):hover{
+    background:rgba(153, 153, 153, 0.2);
+}
+button:not(.floating):active{
+    background:rgba(153, 153, 153, 0.4);
+}
+button[disabled]{
+    color:rgba(0,0,0,0.26);
+}
+button.floating{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+button.floating:active{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

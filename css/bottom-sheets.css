@@ -6,6 +6,7 @@
     z-index:501;
     top:100%;
     transition:top 0.5s;
+    left:0;
 }
 bottom-scrim{
     width:100%;

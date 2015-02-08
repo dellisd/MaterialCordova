@@ -111,6 +111,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="css\bottom-sheets.css" />
+    <Content Include="css\buttons.css" />
     <Content Include="css\desktop.css" />
     <Content Include="css\header.css" />
     <Content Include="css\inputs.css" />

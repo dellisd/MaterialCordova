@@ -51,7 +51,7 @@ $('#menu').click(function () {
                 $('menu').draggable("destroy")
                 md = true
                 $(this).animate({ left: (w * -1) }, 500)
-                $('scrim').click()
+                $('menu-scrim').click()
             }
         }
         });
