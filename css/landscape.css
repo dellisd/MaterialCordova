@@ -4,8 +4,7 @@
         line-height:48px;
     }
     main{
-        position:relative;
-        top:48px;
+        margin-top:48px;
     }
     .dh{
     height:96px;

@@ -64,3 +64,6 @@ touch-target{
 .none{
     visibility:hidden;
 }
+main{
+    margin-top:65px;
+}

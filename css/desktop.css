@@ -4,8 +4,8 @@
         line-height:64px;
     }
     main{
-        position:relative;
-        top:64px;
+        margin-top:64px;
+        left:-100%;
     }
     touch-target {
         margin-top: 8px;
