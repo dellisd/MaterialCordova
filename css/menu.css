@@ -59,7 +59,7 @@ mh{
     line-height:48px;
     font-weight:500;
 }
-menu-scrim{
+menu-scrim, dialog-scrim{
     width:100%;
     visibility:hidden;
     height:100%;
@@ -71,7 +71,7 @@ menu-scrim{
     left:0;
     z-index:500;
 }
-menu-scrim.open{
+menu-scrim.open, dialog-scrim.open{
     width:100%;
     opacity:1;
     visibility:visible;

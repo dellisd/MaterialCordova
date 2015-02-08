@@ -31,4 +31,7 @@
         menu{
             max-width:240px;
         }
+        dialog{
+            width:240px;
+        }
 }
