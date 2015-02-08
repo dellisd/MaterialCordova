@@ -11,6 +11,7 @@
     <link href="css/menu.css" rel="stylesheet" />
     <link href="css/landscape.css" rel="stylesheet" />
     <link href="css/desktop.css" rel="stylesheet" />
+    <link href="css/bottom-sheets.css" rel="stylesheet" />
 
     <!-- Additional scripts -->
     <script src="scripts/jquery.js"></script>
@@ -111,9 +112,39 @@
             </mi>
         </ml>
     </menu>
+    <main>
+        <div id="bottom">
+            Open bottom sheet.
+        </div>
+    </main>
+    <bottom-sheet>
+        <ml class="single">
+            <mi id="home">
+                <a>
+                    <icon id="home">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8z" fill="#444444"></path>
+                        </svg>
+                    </icon>
+                    <t>Home</t>
+                </a>
+            </mi>
+            <mi id="fav-stops">
+                <a>
+                    <icon id="fav-stops">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 17.77l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030z" fill="#444444"></path>
+                        </svg>
 
-    <!-- Scrim -->
-    <scrim></scrim>
+                    </icon>
+                    <t>Favourite Stops</t>
+                </a>
+            </mi>
+        </ml>
+</bottom-sheet>
+    <!-- Scrims -->
+    <menu-scrim></menu-scrim>
+    <bottom-scrim></bottom-scrim>
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>

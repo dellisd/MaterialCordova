@@ -59,7 +59,7 @@ mh{
     line-height:48px;
     font-weight:500;
 }
-scrim{
+menu-scrim{
     width:100%;
     visibility:hidden;
     height:100%;
@@ -71,7 +71,7 @@ scrim{
     left:0;
     z-index:500;
 }
-scrim.open{
+menu-scrim.open{
     width:100%;
     opacity:1;
     visibility:visible;

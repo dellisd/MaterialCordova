@@ -23,12 +23,23 @@
         // TODO: This application has been reactivated. Restore application state here.
     };
 })();
+$('#bottom').click(function () {
+    var h = screen.height
+    var bh = $('bottom-sheet').height()
+    var oh = h - bh
+    $('bottom-sheet').css('top', oh)
+    $('bottom-scrim').toggleClass('open')
+})
+$('bottom-scrim').click(function () {
+    $('bottom-scrim').toggleClass('open')
+    $('bottom-sheet').css('top', '100%')
+})
 $('#menu').click(function () {
     $('menu').attr('style', '')
     setTimeout(function(){$('menu').addClass('nt')}, 500)
     var w = $('menu').width()
     md = false
-    $('menu, scrim').addClass('open')
+    $('menu, menu-scrim').addClass('open')
     $('menu').draggable({ 
         axis: "x",
         containment: [-600, 0, 0, 0],
@@ -45,8 +56,8 @@ $('#menu').click(function () {
         }
         });
 })
-$('scrim').click(function () {
-    $('menu, scrim').removeClass('open');
+$('menu-scrim').click(function () {
+    $('menu, menu-scrim').removeClass('open');
     $('menu').removeClass('nt')
     if (!md) {
         $('menu').draggable("destroy")

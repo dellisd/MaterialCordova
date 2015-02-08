@@ -25,6 +25,7 @@ app-bar-title{
     transition:opacity 0.5s, top 0.5s;
     font-size:20px;
     opacity:1;
+    color:#ffffff;
 }
 
 #first, #second{
