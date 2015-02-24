@@ -1,6 +1,10 @@
 ﻿/*General
     #2196F3
 */
+::selection{
+    background:#2196F3;
+    color:#fff;
+}
 body{
     background:#fff;
     color:#212121;
