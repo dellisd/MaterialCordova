@@ -119,6 +119,7 @@
     <Content Include="css\inputs.css" />
     <Content Include="css\landscape.css" />
     <Content Include="css\menu.css" />
+    <Content Include="css\progress.css" />
     <Content Include="images\icons\access-alarm.svg" />
     <Content Include="images\icons\access-alarms.svg" />
     <Content Include="images\icons\access-time.svg" />
