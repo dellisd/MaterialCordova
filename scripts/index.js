@@ -12,6 +12,19 @@
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener( 'resume', onResume.bind( this ), false );
         
+        $('ico').each(function () {
+            var output = "";
+            var icon = $(this).attr('icon');
+            var iconData = readTextFile("images/icons/" + icon + ".svg");
+            var lines = iconData.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+                //code here using lines[i] which will give you each line
+                if (i > 3) {
+                    output = output + lines[i];
+                };
+            };
+            $(this).prepend('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">' + output + '</svg>');
+        });
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
     };
 
@@ -99,4 +112,18 @@ function pad(num, size) {
     var s = num + "";
     while (s.length < size) s = "0" + s;
     return s;
+}
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                allText = rawFile.responseText;
+                
+            }
+        }
+    }
+    rawFile.send(null);
+    return allText;
 }
