@@ -1,6 +1,8 @@
 # MaterialCordova
 A template for creating Apache Cordova apps with Google's Material Design guidlines.
-
+# Why MaterialCordova?
+Why don't I just use another library, like polymer for my material design? 
+Because! MaterialCordova allows you to create your app as if it was actual html5. Also, MaterialCordova supports Windows 8 apps!
 # To-do
 * Everything
 * Documentation
