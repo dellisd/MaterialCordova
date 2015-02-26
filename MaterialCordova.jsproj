@@ -115,6 +115,7 @@
     <Content Include="css\cards.css" />
     <Content Include="css\desktop.css" />
     <Content Include="css\dialogs.css" />
+    <Content Include="css\dropdown.css" />
     <Content Include="css\header.css" />
     <Content Include="css\inputs.css" />
     <Content Include="css\landscape.css" />

@@ -16,6 +16,8 @@
     <link href="css/buttons.css" rel="stylesheet" />
     <link href="css/cards.css" rel="stylesheet" />
     <link href="css/progress.css" rel="stylesheet" />
+    <link href="css/dropdown.css" rel="stylesheet" />
+
 
     <!-- Additional scripts -->
     <script src="scripts/jquery.js"></script>
@@ -29,7 +31,7 @@
                 <ico icon="menu"></ico>
             </touch-target>
             <app-bar-title>Title</app-bar-title>
-            <touch-target id="more" class="right dark">
+            <touch-target id="more" class="right dark" menu="m">
                 <ico icon="more-vert"></ico>
             </touch-target>
             <touch-target id="search" class="right dark">
@@ -47,6 +49,12 @@
             <touch-target id="search" class="right dark"></touch-target>
         </section>
     </header>
+    <dropdown id="m">
+        <dpi>More</dpi>
+        <dpi>Stuff</dpi>
+        <dpi>In This</dpi>
+        <dpi>Menu</dpi>
+    </dropdown>
     <menu>
         <menu-header style="background-image:url(images/wallpaper.png);"></menu-header>
         <ml class="single">
@@ -131,9 +139,7 @@
             <mi id="home">
                 <a>
                     <icon id="home">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8z" fill="#444444"></path>
-                        </svg>
+                        <ico icon="home"></ico>
                     </icon>
                     <t>Home</t>
                 </a>
@@ -141,10 +147,7 @@
             <mi id="fav-stops">
                 <a>
                     <icon id="fav-stops">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M12 17.77l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030z" fill="#444444"></path>
-                        </svg>
-
+                        <ico icon="star"></ico>
                     </icon>
                     <t>Favourite Stops</t>
                 </a>

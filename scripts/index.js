@@ -36,6 +36,19 @@
         // TODO: This application has been reactivated. Restore application state here.
     };
 })();
+var openMenu = false;
+
+$('[menu]').click(function () {
+    var id = $(this).attr('menu');
+    $('#' + id).addClass('open');
+    
+    $(document).click(function () {
+        if (openMenu == true) {
+        }
+    })
+    openMenu = true;
+})
+
 $('#bottom').click(function () {
     var h = screen.height
     var bh = $('bottom-sheet').height()
