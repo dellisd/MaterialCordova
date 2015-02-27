@@ -1,4 +1,43 @@
-﻿/*Search Bar*/
+﻿/*text input*/
+input[type="text"]{
+    height:48px;
+    line-height:48px;
+    color:#212121;
+    width:100%;
+    -webkit-appearance:none;
+    border:0px;
+    border-bottom:1px solid #D2D2D2; 
+    font-size:16px;
+}
+label{
+    height: 48px;
+    position: absolute;
+    top: 2px;
+    line-height: 48px;
+    transition: all 0.5s;
+    color:#D2D2D2;
+    font-size: 16px;
+    font-weight: 500;
+}
+input-group.blur label{
+    color:#D2D2D2 !important;
+}
+input-group.active label{
+    top:-16px;
+    font-size:12px;
+    color:#2196F3;
+}
+input-group.active input[type="text"]{
+    border-bottom:2px solid #2196F3;
+}
+input-group{
+    height: 48px;
+    width: 100%;
+    padding-top: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+/*Search Bar*/
 input[type="search"]{
     width:calc(100% - 144px);
     height:100%;

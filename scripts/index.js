@@ -38,6 +38,20 @@
 })();
 var openMenu = false;
 
+$('input[type="text"], label').focus(function () {
+    var parent = $(this).parent();
+    $(parent).addClass('active').removeClass('blur');
+    $(parent).children('input[type="text"]').focus();
+})
+$('input[type="text"], label').blur(function () {
+    var parent = $(this).parent();
+    var text = $(parent).children('input').val();
+    if (text == "") {
+        $(parent).removeClass('active').removeClass('blur');
+    } else {
+        $(parent).addClass('blur');
+    };
+})
 $('[menu]').click(function () {
     var id = $(this).attr('menu');
     $('#' + id).addClass('open');
