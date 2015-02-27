@@ -10,4 +10,5 @@ Because! MaterialCordova allows you to create your app as if it was actual html5
 * Buttons, Cards, Chips, Snackbars and Toasts, Dialogs, Lists, Menus, Text Inputs, Sliers, Progress bars, Switches, Tabs, and Tooltips
 * Tidy up code
 * Combine stylesheets and minify(?)
+* Make everything usable as proper HTML5.
 * etc.
