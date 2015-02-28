@@ -42,7 +42,7 @@ $('input[type="text"], label').focus(function () {
     var parent = $(this).parent();
     $(parent).addClass('active').removeClass('blur');
     $(parent).children('input[type="text"]').focus();
-})
+});
 $('input[type="text"], label').blur(function () {
     var parent = $(this).parent();
     var text = $(parent).children('input').val();
@@ -51,16 +51,20 @@ $('input[type="text"], label').blur(function () {
     } else {
         $(parent).addClass('blur');
     };
-})
-$('[menu]').click(function () {
+});
+$('[menu]').click(function (e) {
+    e.stopPropagation();
     var id = $(this).attr('menu');
     $('#' + id).addClass('open');
     
-    $(document).click(function () {
-        if (openMenu == true) {
-        }
-    })
+    
     openMenu = true;
+})
+$(document).click(function () {
+    if (openMenu == true) {
+        openMenu = false;
+        $('dropdown').removeClass('open');
+    }
 })
 
 $('#bottom').click(function () {
