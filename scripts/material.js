@@ -18,3 +18,21 @@ $("dpi").click(function (e) {
 
     ink.css({ top: y + 'px', left: x + 'px' }).addClass("animate");
 })
+$("touch-target").click(function (e) {
+    parent = $(this).parent();
+    if ($(this).children("ripple").length == 0)
+        $(this).prepend("<ripple></ripple>");
+
+    ink = $(this).children("ripple");
+    ink.removeClass("animate");
+
+    if (!ink.height() && !ink.width()) {
+        d = Math.max(parent.outerWidth(), parent.outerHeight());
+        ink.css({ height: 48, width: 48 });
+    }
+
+    x = 0;
+    y = 0;
+
+    ink.css({ top: y + 'px', left: x + 'px' }).addClass("animate");
+})

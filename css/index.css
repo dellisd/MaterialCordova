@@ -54,6 +54,7 @@ touch-target{
     cursor:pointer;
     padding-top:2px;
     box-sizing:border-box;
+    position:relative;
 }
 .b{padding-top:0px !important}
 .dark path {
