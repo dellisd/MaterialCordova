@@ -63,7 +63,7 @@ $('[menu]').click(function (e) {
 $(document).click(function () {
     if (openMenu == true) {
         openMenu = false;
-        $('dropdown').removeClass('open');
+        $('dropdown').delay(200).removeClass('open');
     }
 })
 

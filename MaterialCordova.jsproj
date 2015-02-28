@@ -121,6 +121,7 @@
     <Content Include="css\landscape.css" />
     <Content Include="css\menu.css" />
     <Content Include="css\progress.css" />
+    <Content Include="css\ripple.css" />
     <Content Include="images\icons\access-alarm.svg" />
     <Content Include="images\icons\access-alarms.svg" />
     <Content Include="images\icons\access-time.svg" />
@@ -903,6 +904,7 @@
     <Content Include="scripts\jquery-ui.min.js" />
     <Content Include="scripts\jquery.js" />
     <Content Include="scripts\jquery.ui.touch-punch.min.js" />
+    <Content Include="scripts\material.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />

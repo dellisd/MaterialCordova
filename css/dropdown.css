@@ -1,7 +1,6 @@
 ﻿dropdown {
     min-width: 84px;
     box-sizing: border-box;
-    padding: 8px 16px;
     background: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     position:absolute;
@@ -23,4 +22,14 @@ dpi{
     font-size:16px;
     display:block;
     line-height:48px;
+    overflow:hidden;
+    position:relative;
+    padding: 0 16px;
+    box-sizing:border-box;
+}
+dpi:first-child{
+    padding-top:8px;
+}
+dpi:last-child{
+    padding-bottom:8px;
 }
